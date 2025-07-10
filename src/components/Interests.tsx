@@ -1,4 +1,4 @@
-import { userProfile } from './components/UserProfile';
+import { userProfile } from './UserProfile';
 function Interests (props) {
         return(
         <>

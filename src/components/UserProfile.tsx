@@ -28,3 +28,5 @@ export const userProfile = {
   },
   interests: ['программирование', 'путешествия', 'фотография'], // необязательное свойство
 };
+
+export default UserProfile;

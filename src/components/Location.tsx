@@ -1,10 +1,9 @@
-type userProfile = {
-  location: string;
-  userName: string;
+type UserProfile = {
+  country: string;
+  city: string;
+  address: string;
 };
-
-import { userProfile } from './UserProfile';
-function Location (props) {
+function Location (props: UserProfile) {
         return(
         <>
         <div className="card">
