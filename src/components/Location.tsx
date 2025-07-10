@@ -1,12 +1,17 @@
+type userProfile = {
+  location: string;
+  userName: string;
+};
+
 import { userProfile } from './UserProfile';
-function Location () {
+function Location (props) {
         return(
         <>
         <div className="card">
           <div className="card-header">Местоположение</div>
-          <div className="card-content">Страна: {userProfile.location.country}</div>
-          <div className="card-content">Город: {userProfile.location.city}</div>
-          <div className="card-content">Адресс: {userProfile.location.address}</div>
+          <div className="card-content">Страна: {props.country}</div>
+          <div className="card-content">Город: {props.city}</div>
+          <div className="card-content">Адрес: {props.address}</div>
         </div>
         </>
         )

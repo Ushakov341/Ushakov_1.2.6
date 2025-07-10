@@ -1,4 +1,4 @@
-interface UserProfile {
+export interface UserProfile {
   name: string;
   description: string;
   isLookingForJob: boolean;

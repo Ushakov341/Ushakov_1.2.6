@@ -14,8 +14,16 @@ function App() {
         <p>{userProfile.userDescription}</p>
       </div>
       <div className="main">
-        <Contact />
-        <Location />
+        <Contact 
+        
+        />
+        <Location 
+          country={userProfile.location.country}
+          city={userProfile.location.city}
+          address={userProfile.location.address}
+
+
+        />
         <Interests />
       </div>
     </>

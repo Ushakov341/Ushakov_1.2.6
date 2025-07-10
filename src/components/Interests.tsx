@@ -5,13 +5,13 @@ function Interests () {
         <div className="card">
           <div className="card-header">Интересы</div>
           <div className="card-content">
-            <ul>
+            {/* <ul>
               {userProfile.interests.map((interest)=>(
                 return <li>{interest}</li>
               )
               
               )}
-            </ul>
+            </ul> */}
           </div>
         </div>
         </>
