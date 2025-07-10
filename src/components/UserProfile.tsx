@@ -1,3 +1,15 @@
+interface UserProfile {
+  name: string;
+  description: string;
+  isLookingForJob: boolean;
+  email?: string;
+  phone?: string;
+  country?: string;
+  city?: string;
+  address?: string;
+  interests?: string[];
+  photoUrl?: string;
+}
 export const userProfile = {
   userName: 'Дэн', // обязательное свойство
   protoUrl: null, // необязательное свойство

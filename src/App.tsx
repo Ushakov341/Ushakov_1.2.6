@@ -1,6 +1,9 @@
 import defaultUserPhoto from './assets/photo-default.svg';
 import './App.css';
 import { userProfile } from './components/UserProfile';
+import Contact from './components/Contact';
+import Location from './components/Location';
+import Interests from './components/Interests';
 
 function App() {
   return (
@@ -11,18 +14,9 @@ function App() {
         <p>{userProfile.userDescription}</p>
       </div>
       <div className="main">
-        <div className="card">
-          <div className="card-header">Контактная информация</div>
-          <div className="card-content"></div>
-        </div>
-        <div className="card">
-          <div className="card-header">Местоположение</div>
-          <div className="card-content"></div>
-        </div>
-        <div className="card">
-          <div className="card-header">Интересы</div>
-          <div className="card-content"></div>
-        </div>
+        <Contact />
+        <Location />
+        <Interests />
       </div>
     </>
   );
