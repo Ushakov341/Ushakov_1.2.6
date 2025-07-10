@@ -1,17 +1,15 @@
 import { userProfile } from './components/UserProfile';
-function Interests () {
+function Interests (props) {
         return(
         <>
         <div className="card">
-          <div className="card-header">Интересы</div>
+          <div className="card-header">Интересы: </div>
           <div className="card-content">
-            {/* <ul>
-              {userProfile.interests.map((interest)=>(
-                return <li>{interest}</li>
-              )
-              
-              )}
-            </ul> */}
+          
+          {props.interests.map((interest)=>{
+            return <><li>{interest}</li></>
+          })}
+          
           </div>
         </div>
         </>

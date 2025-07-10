@@ -15,16 +15,17 @@ function App() {
       </div>
       <div className="main">
         <Contact 
-        
+          email={userProfile.contactInfo.email}
+          phone={userProfile.contactInfo.phone}
         />
         <Location 
           country={userProfile.location.country}
           city={userProfile.location.city}
           address={userProfile.location.address}
-
-
         />
-        <Interests />
+        <Interests 
+          interests={userProfile.interests}
+        />
       </div>
     </>
   );
