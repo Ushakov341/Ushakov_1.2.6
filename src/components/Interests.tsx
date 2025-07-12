@@ -7,7 +7,7 @@ function Interests (props) {
           <div className="card-content">
           
           {props.interests.map((interest)=>{
-            return <><li>{interest}</li></>
+            return <li>{interest}</li>
           })}
           
           </div>

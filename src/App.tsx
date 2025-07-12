@@ -9,7 +9,9 @@ function App() {
   return (
     <>
       <div className="description">
-        <img className="photo--default" src={defaultUserPhoto} />
+        <img   className="photo--default"
+  src={userProfile.protoUrl ? userProfile.protoUrl : defaultUserPhoto}
+  alt="User photo" />
         <h4>{userProfile.userName}</h4>
         <p>{userProfile.userDescription}</p>
       </div>
