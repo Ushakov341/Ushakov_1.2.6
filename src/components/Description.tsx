@@ -5,6 +5,7 @@ type Description = {
 description: string;
 userName: string;
 photoUrl?: string;
+openForWork: boolean;
 }
 
 function Description (props) {
@@ -16,6 +17,7 @@ function Description (props) {
         alt="User photo" />
     <h4>{props.userName}</h4>
     <p>{props.description}</p>
+    <p>{props.openForWork ? 'В поиске работы' : ''}</p>
   </div>
   </>
   )

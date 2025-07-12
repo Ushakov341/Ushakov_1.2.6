@@ -14,6 +14,7 @@ function App() {
         description={userProfile.userDescription}
         userName={userProfile.userName}
         photoUrl={userProfile.protoUrl}
+        openForWork={userProfile.openForWork}
         />
       <div className="main">
         <Contact 
