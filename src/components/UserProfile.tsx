@@ -1,11 +1,12 @@
-export interface UserProfile {
+export type UserProfile = {
   name: string;
   description: string;
   isLookingForJob: boolean;
-  email?: string;
+  contactInfo: string;
+  email: string;
   phone?: string;
-  country?: string;
-  city?: string;
+  country: string;
+  city: string;
   address?: string;
   interests?: string[];
   photoUrl?: string;

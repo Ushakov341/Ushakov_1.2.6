@@ -1,11 +1,18 @@
-import { userProfile } from './UserProfile';
+import React from 'react';
+
+type UserProfile = {
+  contactInfo: string;
+  email: string;
+  phone?: string;
+};
+
 function Contact (props) {
         return(
         <>
         <div className="card">
           <div className="card-header">Контактная информация</div>
           <div className="card-content">Email: {props.email}</div>
-          <div className="card-content">Телефон: {props.phone}</div>
+          <div className="card-content">Телефон: {props.phone ? props.phone : 'Не указан'}</div>
 
         </div>
         </>

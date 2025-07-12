@@ -4,6 +4,7 @@ import { userProfile } from './components/UserProfile';
 import Contact from './components/Contact';
 import Location from './components/Location';
 import Interests from './components/Interests';
+import React from 'react';
 
 function App() {
   return (
