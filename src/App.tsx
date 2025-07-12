@@ -1,21 +1,20 @@
 import defaultUserPhoto from './assets/photo-default.svg';
+import React from 'react';
 import './App.css';
 import { userProfile } from './components/UserProfile';
 import Contact from './components/Contact';
 import Location from './components/Location';
 import Interests from './components/Interests';
-import React from 'react';
+import Description from './components/Description';
 
 function App() {
   return (
     <>
-      <div className="description">
-        <img   className="photo--default"
-  src={userProfile.protoUrl ? userProfile.protoUrl : defaultUserPhoto}
-  alt="User photo" />
-        <h4>{userProfile.userName}</h4>
-        <p>{userProfile.userDescription}</p>
-      </div>
+        <Description 
+        description={userProfile.userDescription}
+        userName={userProfile.userName}
+        photoUrl={userProfile.protoUrl}
+        />
       <div className="main">
         <Contact 
           email={userProfile.contactInfo.email}

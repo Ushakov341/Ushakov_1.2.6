@@ -1,11 +1,11 @@
 import React from "react";
 
-type UserProfile = {
+type Location = {
   country: string;
   city: string;
   address?: string;
 };
-function Location (props: UserProfile) {
+function Location (props) {
         return(
         <>
         <div className="card">

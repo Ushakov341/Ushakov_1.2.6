@@ -1,6 +1,6 @@
 import React from 'react';
 
-type UserProfile = {
+type Contact = {
   contactInfo: string;
   email: string;
   phone?: string;

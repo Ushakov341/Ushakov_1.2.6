@@ -1,6 +1,6 @@
 import React from 'react';
 
-type UserProfile = {
+type Interests = {
   interesets?: string[];
 }
 
