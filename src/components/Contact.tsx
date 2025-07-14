@@ -6,7 +6,7 @@ type Contact = {
   phone?: string;
 };
 
-function Contact (props) {
+function Contact (props: Contact) {
         return(
         <>
         <div className="card">

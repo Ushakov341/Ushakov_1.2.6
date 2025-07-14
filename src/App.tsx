@@ -13,14 +13,14 @@ function App() {
         <Description 
         description={userProfile.userDescription}
         userName={userProfile.userName}
-        photoUrl={userProfile.protoUrl}
+        protoUrl={userProfile.protoUrl}
         openForWork={userProfile.openForWork}
         />
       <div className="main">
         <Contact 
           email={userProfile.contactInfo.email}
           phone={userProfile.contactInfo.phone}
-        />
+          />
         <Location 
           country={userProfile.location.country}
           city={userProfile.location.city}
