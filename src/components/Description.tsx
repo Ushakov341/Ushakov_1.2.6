@@ -4,11 +4,11 @@ import defaultUserPhoto from '../assets/photo-default.svg';
 type Description = {
 description: string;
 userName: string;
-photoUrl?: string;
+protoUrl?: string;
 openForWork: boolean;
 }
 
-function Description (props) {
+function Description (props: Description) {
     return (
     <>      
     <div className="description">

@@ -9,11 +9,11 @@ export type userProfile = {
   city: string;
   address?: string;
   interests?: string[];
-  photoUrl?: string;
+  protoUrl?: string;
 }
 export const userProfile = {
   userName: 'Дэн', // обязательное свойство
-  protoUrl: null, // необязательное свойство
+  protoUrl: 'https://avatars.mds.yandex.net/i?id=a85996282562ed0df6be4022d4b3bbf1574436b2-3028142-images-thumbs&n=13', // необязательное свойство
   userDescription: 'Любитель React и фронтенд разработки', // обязательное свойство
   openForWork: true, // необязательное свойство
   contactInfo: {
