@@ -12,7 +12,7 @@ function Location (props) {
           <div className="card-content">Страна: {props.country}</div>
           <div className="card-content">Город: {props.city}</div>
           <div className="card-content">
-            Адрес: {props.address ? props.address : 'Не указано'}</div>
+            Адрес: {props.address ? props.address : 'Не указан'}</div>
         </div>
         </>
         )
