@@ -1,4 +1,4 @@
-export type UserProfile = {
+export type userProfile = {
   name: string;
   description: string;
   isLookingForJob: boolean;
@@ -30,4 +30,4 @@ export const userProfile = {
   interests: ['программирование', 'путешествия', 'фотография'], // необязательное свойство
 };
 
-export default UserProfile;
+export default userProfile;
